@@ -29,8 +29,14 @@ public class Main {
         }
 
 
+        //Generic methods and bounded types
+        Integer[] array = {1,2,3};
+        Integer e = 1;
+        int count = NaturalNumber.countGreaterThan(array,e);
+        System.out.println(count);
         NaturalNumber<Integer> naturalNumber1 = new NaturalNumber<Integer>(1);
         NaturalNumber<Integer> naturalNumber2 = new NaturalNumber<Integer>(2);
+
         System.out.println("naturalNumber is" + naturalNumber2.isEven());
 
     }

@@ -6,6 +6,13 @@ public class Main {
         simpleBox.set(new Integer(1));
         System.out.println(simpleBox.get());
 
+
+
+        Box<Integer> integerBox = new Box<Integer>();
+        integerBox.set(new Integer(10));
+        // this will need to be bounded by number typ!
+        integerBox.inspect(10);
+
         Pair<Integer, String> p1 = new Pair<>(1, "apple");
         Pair<Integer, String> p2 = new Pair<>(2, "pear");
         Pair<Integer, String> p3 = new Pair<>(1, "apple");
@@ -21,6 +28,10 @@ public class Main {
             System.out.println("not same");
         }
 
+
+        NaturalNumber<Integer> naturalNumber1 = new NaturalNumber<Integer>(1);
+        NaturalNumber<Integer> naturalNumber2 = new NaturalNumber<Integer>(2);
+        System.out.println("naturalNumber is" + naturalNumber2.isEven());
 
     }
 }
